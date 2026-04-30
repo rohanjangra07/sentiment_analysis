@@ -3,7 +3,7 @@
 
 This project performs sentiment analysis on the Amazon Fine Food Reviews dataset. It uses Natural Language Processing (NLP) techniques to classify customer reviews into Positive, Negative, or Neutral sentiments and extract useful business insights.
 
-🎯 Objective
+🎯 Objective 
 Analyze customer feedback using text data
 Classify sentiments based on polarity scores
 Visualize sentiment distribution
