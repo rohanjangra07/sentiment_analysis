@@ -15,7 +15,7 @@ Matplotlib, Seaborn
 TextBlob
 📂 Dataset
 Dataset used: Amazon Fine Food Reviews
-First 5000 rows were used for analysis
+First 5000 rows were used for analysis 
 Key columns:
 Text → Review content
 Score → Rating
