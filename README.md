@@ -1,111 +1,237 @@
-🚀 Sentiment Analysis on Amazon Reviews
+# 📊 Sentiment Analysis on Amazon Product Reviews
 
-NLP-based project to analyze customer sentiments using real-world product reviews
+## 📚 Table of Contents
+- [Project Overview](#project-overview)
+- [Objective](#objective)
+- [Tech Stack](#tech-stack)
+- [Dataset](#dataset)
+- [Workflow](#workflow)
+- [Key Findings & Insights](#key-findings--insights)
+- [Recommendations](#recommendations)
+- [Files Included](#files-included)
+- [How to Run](#how-to-run)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
 
-📌 Overview
+---
 
-This project analyzes Amazon Fine Food Reviews to classify customer feedback into
-🟢 Positive | 🔴 Negative | ⚪ Neutral
+## 📌 Project Overview
+This project performs sentiment analysis on the **Amazon Fine Food Reviews** dataset. Using Natural Language Processing (NLP) techniques, we classify customer reviews into **Positive**, **Negative**, or **Neutral** sentiments and extract actionable business insights.
 
-It uses TextBlob sentiment analysis and data visualization to extract meaningful insights.
+---
 
-🎯 Key Highlights
+## 🎯 Objective
+- Analyze customer feedback using textual data.
+- Classify sentiments based on polarity scores.
+- Visualize sentiment distribution.
+- Generate insights to improve product quality.
 
-✔ Processed 5000+ customer reviews
-✔ Built sentiment classification pipeline
-✔ Visualized insights using charts
-✔ Derived actionable business recommendations
+---
 
-🛠️ Tech Stack
-Python • Pandas • NumPy • Matplotlib • Seaborn • TextBlob
+## 🛠️ Tech Stack
+- **Python**
+- **Pandas**, **NumPy**
+- **Matplotlib**, **Seaborn**
+- **TextBlob**
 
+---
 
+## 📂 Dataset
+- **Source:** Amazon Fine Food Reviews.
+- **Rows used:** First 5,000 entries.
+- **Key columns:**
+  - `Text` – Review content.
+  - `Score` – Rating (1‑5).
 
+---
 
-📂 Project Structure
-📦 Sentiment-Analysis
- ┣ 📜 Sentiment_Analysis.ipynb
- ┣ 📄 summary.docx
- ┣ 📄 README.md
+## ⚙️ Workflow
+1. **Data Loading & Exploration**
+   - Load CSV with Pandas.
+   - Inspect shape and columns.
+2. **Data Cleaning**
+   - Remove nulls and duplicate reviews.
+   - Keep only `Text` and `Score` columns.
+3. **Sentiment Analysis**
+   - Compute polarity with **TextBlob**.
+   - Map polarity to sentiment:
+     - `> 0` → **Positive**
+     - `< 0` → **Negative**
+     - `= 0` → **Neutral**
+4. **Visualization**
+   - Bar chart of sentiment counts.
+   - Pie chart of sentiment percentages.
+   - Box plot of rating vs. polarity.
 
+---
 
+## 📈 Key Findings & Insights
+- **Majority** of reviews are positive.
+- **Negative** feedback frequently mentions:
+  - Taste issues
+  - Packaging problems
+  - Price concerns
+- Some **high‑rated** reviews still show neutral sentiment, often due to very short or factual text.
+- **Insight:** Ratings and sentiment are correlated but not identical; text analysis adds depth.
 
-⚙️ Workflow
+---
 
+## 🚀 Recommendations
+- Improve **product quality consistency**.
+- Strengthen **packaging standards**.
+- Enhance **value‑for‑money** perception.
 
-🔹 Data Processing
-Cleaned missing & duplicate data
-Extracted relevant features
+---
 
+## 📎 Files Included
+- `sentiment_analysis.ipynb` – Main notebook.
+- `summary.docx` – Project summary (generated from this README).
+- `README.md` – Project documentation (primary file).
+- `PROJECT_README.md` – Duplicate project documentation (this file).
 
+---
 
-🔹 Sentiment Analysis
-Calculated polarity using TextBlob
-Classified into Positive / Negative / Neutral
+## ▶️ How to Run
+```bash
+# Clone the repository
+git clone https://github.com/rohanjangra07/sentiment_analysis.git
 
+# Navigate into the project folder
+cd sentiment_analysis
 
+# Install required packages
+pip install pandas numpy matplotlib seaborn textblob
 
-🔹 Visualization
-📊 Sentiment Distribution (Bar Chart)
-🥧 Percentage Share (Pie Chart)
-📉 Rating vs Polarity (Box Plot)
-📈 Results
+# Launch the notebook
+jupyter notebook sentiment_analysis.ipynb
+```
 
+---
 
+## 📌 Future Improvements
+- Integrate **advanced NLP models** (e.g., BERT) for richer sentiment detection.
+- Perform **aspect‑based** sentiment analysis.
+- Deploy the pipeline as an interactive **web app**.
 
+---
 
-Sentiment	Insight
-Positive	Majority of users satisfied
-Negative	Issues in taste, packaging, pricing
-Neutral	Short or factual reviews
+## 👨‍💻 Author
+**Rohan Jangra** – B.Tech CSE (AI/ML)
 
+## 📚 Table of Contents
+- [Project Overview](#project-overview)
+- [Objective](#objective)
+- [Tech Stack](#tech-stack)
+- [Dataset](#dataset)
+- [Workflow](#workflow)
+- [Key Findings & Insights](#key-findings--insights)
+- [Recommendations](#recommendations)
+- [Files Included](#files-included)
+- [How to Run](#how-to-run)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
 
+---
 
+## 📌 Project Overview
+This project performs sentiment analysis on the **Amazon Fine Food Reviews** dataset. Using Natural Language Processing (NLP) techniques, we classify customer reviews into **Positive**, **Negative**, or **Neutral** sentiments and extract actionable business insights.
 
-💡 Key Insights
-Ratings ≠ Sentiment (text gives deeper meaning)
-Neutral reviews often lack emotional words
-Negative reviews highlight real product issues
-🚀 Business Recommendation
+---
 
-Improve:
+## 🎯 Objective
+- Analyze customer feedback using textual data.
+- Classify sentiments based on polarity scores.
+- Visualize sentiment distribution.
+- Generate insights to improve product quality.
 
-Product consistency
-Packaging quality
-Price-to-value ratio
+---
 
+## 🛠️ Tech Stack
+- **Python**
+- **Pandas**, **NumPy**
+- **Matplotlib**, **Seaborn**
+- **TextBlob**
 
+---
 
+## 📂 Dataset
+- **Source:** Amazon Fine Food Reviews.
+- **Rows used:** First 5,000 entries.
+- **Key columns:**
+  - `Text` – Review content.
+  - `Score` – Rating (1‑5).
 
-▶️ Run Locally
+---
 
+## ⚙️ Workflow
+1. **Data Loading & Exploration**
+   - Load CSV with Pandas.
+   - Inspect shape and columns.
+2. **Data Cleaning**
+   - Remove nulls and duplicate reviews.
+   - Keep only `Text` and `Score` columns.
+3. **Sentiment Analysis**
+   - Compute polarity with **TextBlob**.
+   - Map polarity to sentiment:
+     - `> 0` → **Positive**
+     - `< 0` → **Negative**
+     - `= 0` → **Neutral**
+4. **Visualization**
+   - Bar chart of sentiment counts.
+   - Pie chart of sentiment percentages.
+   - Box plot of rating vs. polarity.
 
-git clone https://github.com/your-username/repo-name.git
+---
 
+## 📈 Key Findings & Insights
+- **Majority** of reviews are positive.
+- **Negative** feedback frequently mentions:
+  - Taste issues
+  - Packaging problems
+  - Price concerns
+- Some **high‑rated** reviews still show neutral sentiment, often due to very short or factual text.
+- **Insight:** Ratings and sentiment are correlated but not identical; text analysis adds depth.
 
-cd repo-name
+---
 
+## 🚀 Recommendations
+- Improve **product quality consistency**.
+- Strengthen **packaging standards**.
+- Enhance **value‑for‑money** perception.
 
-pip install -r requirements.txt
+---
 
+## 📎 Files Included
+- `sentiment_analysis.ipynb` – Main notebook.
+- `summary.docx` – Project summary (generated from this README).
+- `README.md` – Project documentation (primary file).
+- `PROJECT_README.md` – Duplicate project documentation (this file).
 
-jupyter notebook
+---
 
+## ▶️ How to Run
+```bash
+# Clone the repository
+git clone https://github.com/rohanjangra07/sentiment_analysis.git
 
-🔮 Future Scope
+# Navigate into the project folder
+cd sentiment_analysis
 
+# Install required packages
+pip install pandas numpy matplotlib seaborn textblob
 
+# Launch the notebook
+jupyter notebook sentiment_analysis.ipynb
+```
 
-BERT / Deep Learning models
-Aspect-based sentiment analysis
-Deployment (Streamlit / Flask)
+---
 
+## 📌 Future Improvements
+- Integrate **advanced NLP models** (e.g., BERT) for richer sentiment detection.
+- Perform **aspect‑based** sentiment analysis.
+- Deploy the pipeline as an interactive **web app**.
 
+---
 
-👨‍💻 Author
-
-
-
-
-Rohan Jangra
-B.Tech CSE (AI/ML)
+## 👨‍💻 Author
+**Rohan Jangra** – B.Tech CSE (AI/ML)
